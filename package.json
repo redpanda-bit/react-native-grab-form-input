@@ -1,0 +1,27 @@
+{
+  "name": "react-native-grab-form-input",
+  "version": "1.0.0",
+  "description": "A react native package to render inputs that allow for dragging and pasting content from one input to another",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest __tests__/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosalmonte04/react-native-grab-form-input.git"
+  },
+  "keywords": [
+    "react-native",
+    "form-inputs",
+    "text-inputs",
+    "grab-and-paste",
+    "grab-n-paste",
+    "grab-n-go"
+  ],
+  "author": "Carlos Almonte",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlosalmonte04/react-native-grab-form-input/issues"
+  },
+  "homepage": "https://github.com/carlosalmonte04/react-native-grab-form-input#readme"
+}
