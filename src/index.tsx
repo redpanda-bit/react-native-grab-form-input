@@ -1,12 +1,7 @@
 import React from 'react';
-import {View} from "react-native";
+import {View} from 'react-native';
+import type {GrabFormInputProps} from './types';
 
-interface Props {
-  inputValues: string[];
-  onInputValueChange: (value: string, index: number) => void;
-  inputStyles: object[];
-};
-
-export function GrabFormInput(props: Props): JSX.Element {
-  return (<View />);
-};
+export function GrabFormInput(props: GrabFormInputProps): JSX.Element {
+  return <View />;
+}
