@@ -1,5 +1,12 @@
-const GrabFormInput = require('./NativeGrabFormInput').default;
+import React from 'react';
+import {View} from "react-native";
 
-export function multiply(a: number, b: number): number {
-  return GrabFormInput.multiply(a, b);
-}
+interface Props {
+  inputValues: string[];
+  onInputValueChange: (value: string, index: number) => void;
+  inputStyles: object[];
+};
+
+export function GrabFormInput(props: Props): JSX.Element {
+  return (<View />);
+};

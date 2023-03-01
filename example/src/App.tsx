@@ -1,14 +1,18 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-grab-form-input';
+import GrabFormInput from 'react-native-grab-form-input';
 
 const result = multiply(3, 7);
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <GrabFormInput
+        inputValues=["hello","world"]
+        onInputValueChange={(value, index) => {}}
+        inputStyles={[{}, {}]}
+      />
     </View>
   );
 }
