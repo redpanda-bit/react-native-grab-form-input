@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/carlosalmonte04/react-native-grab-form-input/issues"
   },
-  "homepage": "https://github.com/carlosalmonte04/react-native-grab-form-input#readme"
+  "homepage": "https://github.com/carlosalmonte04/react-native-grab-form-input#readme",
+  "devDependencies": {
+    "lodash": "^4.17.21"
+  }
 }
