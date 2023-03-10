@@ -1,19 +1,32 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import GrabFormInput from 'react-native-grab-form-input';
-
-const result = multiply(3, 7);
+import {StyleSheet, View, Text} from 'react-native';
+import {GrabFormInput} from 'react-native-grab-form-input';
 
 export default function App() {
+  const [inputHello, setInputHello] = React.useState('hello');
+  const [inputWorld, setInputWorld] = React.useState('world');
+
+  const onInputValueChange = (value: string, index: number) => {
+    switch (index) {
+      case 0:
+        setInputHello(value);
+        break;
+      case 1:
+        setInputWorld(value);
+        break;
+      default:
+        return;
+    }
+  };
+
   return (
-    <View style={styles.container}>
-      <GrabFormInput
-        inputValues=["hello","world"]
-        onInputValueChange={(value, index) => {}}
-        inputStyles={[{}, {}]}
-      />
-    </View>
+    <GrabFormInput
+      inputValues={[inputHello, inputWorld]}
+      onInputValueChange={onInputValueChange}
+      inputStyles={[{}, {}]}
+      containerStyle={styles.container}
+    />
   );
 }
 
