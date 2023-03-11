@@ -38,5 +38,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     borderRadius: 5,
     flexDirection: 'row',
+    alignSelf: 'flex-start',
+    justifyContent: 'flex-start',
   },
 });

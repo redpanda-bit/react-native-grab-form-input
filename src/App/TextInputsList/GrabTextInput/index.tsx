@@ -1,7 +1,8 @@
 import React from 'react';
 import {TextInput, StyleSheet} from 'react-native';
+import {INPUT_HEIGHT} from '../../';
+
 import type {GrabTextInputProps} from '../../../types';
-import {INPUT_HEIGHT} from '../../index';
 
 export const GrabTextInput = React.forwardRef(function (
   props: GrabTextInputProps,
@@ -29,6 +30,11 @@ export const GrabTextInput = React.forwardRef(function (
   );
 });
 
+const Colors = {
+  white: '#FFFFFF',
+  pink: 'pink',
+};
+
 const styles = StyleSheet.create({
   text: {
     fontSize: 24,
@@ -36,12 +42,12 @@ const styles = StyleSheet.create({
   floatingText: {
     paddingVertical: 10,
     paddingHorizontal: 5,
-    backgroundColor: 'pink',
+    backgroundColor: Colors.pink,
     position: 'absolute',
     borderRadius: 5,
   },
   textInput: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: Colors.white,
     marginTop: 12,
     height: INPUT_HEIGHT,
     width: '90%',
